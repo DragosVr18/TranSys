@@ -1,0 +1,21 @@
+﻿<Window x:Class="TranSys.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TranSys"
+        mc:Ignorable="d"
+        Title="LoginWindow" Height="450" Width="800">
+    <Grid Background="#FF323232">
+        <TextBox x:Name="UriTextBox" HorizontalAlignment="Center" Margin="0,160,0,0" VerticalAlignment="Top" Width="300" FontSize="18" RenderTransformOrigin="0.495,0.536" Background="#FF505050" BorderBrush="#FF646464" Foreground="#D8FFFFFF"/>
+        <TextBox x:Name="UsernameTextBox" HorizontalAlignment="Center" Margin="0,220,0,0" VerticalAlignment="Top" Width="300" FontSize="18" Background="#FF505050" BorderBrush="#FF646464" Foreground="#D8FFFFFF"/>
+        <TextBox x:Name="PasswordTextBox" HorizontalAlignment="Center" Margin="0,280,0,0" VerticalAlignment="Top" Width="300" FontSize="18" Background="#FF505050" BorderBrush="#FF646464" Foreground="#D8FFFFFF"/>
+        <Label x:Name="UriLabel" Content="URI" HorizontalAlignment="Left" Margin="250,130,0,0" VerticalAlignment="Top" FontSize="18" Foreground="#D8FFFFFF"/>
+        <Label x:Name="UserLabel" Content="Username" HorizontalAlignment="Left" Margin="250,190,0,0" VerticalAlignment="Top" FontSize="18" Foreground="#D8FFFFFF"/>
+        <Label x:Name="PasswordLabel" Content="Password" HorizontalAlignment="Left" Margin="250,250,0,0" VerticalAlignment="Top" FontSize="18" Foreground="#D8FFFFFF"/>
+        <Button x:Name="LoginButton" Content="Login" HorizontalAlignment="Center" Margin="0,345,0,0" VerticalAlignment="Top" Width="130" FontSize="18" Background="#FF505050" BorderBrush="#FF646464" Foreground="#D8FFFFFF" Click="LoginButton_Click"/>
+        <Label x:Name="TitleLabel" Content="Welcome to TranSys" HorizontalAlignment="Center" Margin="0,20,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold" Foreground="#D8FFFFFF"/>
+        <Label x:Name="PromptLabel" Content="Login to the Neo4J Aura database to continue" HorizontalAlignment="Center" Margin="0,67,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" Foreground="#BFFFFFFF" RenderTransformOrigin="0.499,-1.063"/>
+
+    </Grid>
+</Window>

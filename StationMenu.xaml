@@ -1,0 +1,33 @@
+﻿<Page x:Class="TranSys.StationMenu"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:TranSys"
+      mc:Ignorable="d" 
+      d:DesignHeight="720" d:DesignWidth="350"
+      Title="StationMenu">
+
+    <Grid Width="350" Height="720" Background="#FF323232">
+        <Button x:Name="AddButton" Content="Add New Station" HorizontalAlignment="Center" Margin="0,650,0,0" VerticalAlignment="Top" Foreground="#D8FFFFFF" Background="#FF505050" FontSize="18" Width="270" Height="40" Click="AddButton_Click"/>
+        <ScrollViewer VerticalScrollBarVisibility="Hidden" Margin="40,130,40,100" Name="StationGrid">
+            <Label Content="Select a station from the map" Foreground="#D8FFFFFF" FontSize="18" Height="42" Width="246"/>
+        </ScrollViewer>
+        <Button x:Name="StationsButton" HorizontalAlignment="Left" Margin="40,30,0,0" VerticalAlignment="Top" Foreground="#D8FFFFFF" FontSize="18" Width="65" Height="65" BorderBrush="{x:Null}">
+            <Button.Background>
+                <ImageBrush ImageSource="/bus_stop.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="VehiclesButton" Content="" HorizontalAlignment="Left" Margin="245,30,0,0" VerticalAlignment="Top" Foreground="#D8FFFFFF" FontSize="18" Width="65" Height="65" Click="VehiclesButton_Click" BorderBrush="{x:Null}">
+            <Button.Background>
+                <ImageBrush ImageSource="/bus_icon.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="LinesButton" HorizontalAlignment="Center" Margin="0,30,0,0" VerticalAlignment="Top" Foreground="#D8FFFFFF" FontSize="18" Width="66" Height="65" Click="LinesButton_Click" BorderBrush="{x:Null}">
+            <Button.Background>
+                <ImageBrush ImageSource="/bus_route.png"/>
+            </Button.Background>
+        </Button>
+
+    </Grid>
+</Page>

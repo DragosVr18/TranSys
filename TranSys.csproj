@@ -1,0 +1,48 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="bus-stop.png" />
+    <None Remove="bus_icon.png" />
+    <None Remove="bus_route.png" />
+    <None Remove="bus_side.png" />
+    <None Remove="bus_stop.png" />
+    <None Remove="circle.png" />
+    <None Remove="image.png" />
+    <None Remove="pin.png" />
+    <None Remove="tram_side.png" />
+    <None Remove="trolley_side.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="bus-stop.png" />
+    <EmbeddedResource Include="circle.png" />
+    <EmbeddedResource Include="pin.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Itinero" Version="1.5.1" />
+    <PackageReference Include="Itinero.IO.Osm" Version="1.5.1" />
+    <PackageReference Include="LoadingSpinner.WPF" Version="1.0.0" />
+    <PackageReference Include="Mapsui.Wpf" Version="4.0.0" />
+    <PackageReference Include="Neo4j.Driver" Version="5.11.0" />
+    <PackageReference Include="Neo4j.Driver.Simple" Version="5.11.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="bus_icon.png" />
+    <Resource Include="bus_route.png" />
+    <Resource Include="bus_side.png" />
+    <Resource Include="bus_stop.png" />
+    <Resource Include="image.png" />
+    <Resource Include="tram_side.png" />
+    <Resource Include="trolley_side.png" />
+  </ItemGroup>
+
+</Project>

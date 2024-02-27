@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="AddLinePage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="AddStationPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="AddVehicleMenu.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="EditStationPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="LineButton.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="LineMenu.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="LinePanel.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="LoginWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StationMenu.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StationPanel.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="TimePicker.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="VehicleMenu.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="AddLinePage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AddStationPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AddVehicleMenu.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="EditStationPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="LineButton.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="LineMenu.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="LinePanel.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="LoginWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StationMenu.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StationPanel.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="TimePicker.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="VehicleMenu.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

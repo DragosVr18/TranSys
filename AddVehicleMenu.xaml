@@ -1,0 +1,44 @@
+﻿<Page x:Class="TranSys.AddVehicleMenu"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:TranSys"
+      xmlns:control="clr-namespace:TranSys"
+      mc:Ignorable="d" 
+      d:DesignHeight="720" d:DesignWidth="350"
+      Title="AddVehicleMenu">
+
+    <Grid Width="350" Height="720" Background="#FF323232">
+        <Button x:Name="AddButton" Content="Add Line" HorizontalAlignment="Center" Margin="0,650,0,0" VerticalAlignment="Top" Foreground="#D8FFFFFF" Background="#FF505050" FontSize="18" Width="270" Height="40" Click="AddButton_Click"/>
+        <Button x:Name="BackButton" Content="" HorizontalAlignment="Left" Margin="40,20,0,0" VerticalAlignment="Top" Foreground="#D8FFFFFF" FontSize="18" Width="35" Height="42" Click="BackButton_Click" IsCancel="True" BorderBrush="{x:Null}">
+            <Button.Background>
+                <ImageBrush ImageSource="/image.png" Opacity="0.9" Stretch="UniformToFill"/>
+            </Button.Background>
+        </Button>
+        <TextBox x:Name="ModelTextBox" HorizontalAlignment="Center" Margin="0,115,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="270" FontSize="18" Background="#FF505050" BorderBrush="#FF646464" Foreground="#D8FFFFFF"/>
+        <Label Content="Model" HorizontalAlignment="Left" Margin="40,80,0,0" VerticalAlignment="Top" Foreground="#D8FFFFFF" FontSize="18" FontWeight="Bold"/>
+        <Label Content="Assign to line" HorizontalAlignment="Left" Margin="40,270,0,0" VerticalAlignment="Top" Foreground="#D8FFFFFF" FontSize="18" FontWeight="Bold"/>
+        <Label Content="Add Vehicle" HorizontalAlignment="Left" Margin="80,20,0,0" VerticalAlignment="Top" Foreground="#D8FFFFFF" FontSize="24" FontWeight="Bold"/>
+        <Label Content="Vehicle Type" HorizontalAlignment="Left" Margin="40,155,0,0" VerticalAlignment="Top" Foreground="#D8FFFFFF" FontSize="18" FontWeight="Bold"/>
+        <Button x:Name="BusButton" HorizontalAlignment="Left" Margin="40,195,0,0" VerticalAlignment="Top" Background="#FF505050" Foreground="#D8FFFFFF" Width="78" Height="60" Click="BusButton_Click" RenderTransformOrigin="0.5,0.63" BorderBrush="{x:Null}">
+            <Image Source="bus_side.png"></Image>
+        </Button>
+        <Button x:Name="TramButton" HorizontalAlignment="Left" Margin="232,195,0,0" VerticalAlignment="Top" Background="#FF505050" Foreground="#D8FFFFFF" Width="78" Height="60" Click="TramButton_Click" BorderBrush="{x:Null}">
+            <Image Source="tram_side.png"></Image>
+        </Button>
+        <Button x:Name="TrolleyButton" HorizontalAlignment="Center" Margin="0,195,0,0" VerticalAlignment="Top" Background="#FF505050" Foreground="#D8FFFFFF" Width="78" Height="60" Click="TrolleyButton_Click" BorderBrush="{x:Null}">
+            <Image Source="trolley_side.png"></Image>
+        </Button>
+        <ListBox Name="TourTimeTable" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="40,465,175,100" Background="#FF505050" Foreground="#D8FFFFFF" FontSize="18"/>
+        <Label Content="Tour" HorizontalAlignment="Left" Margin="84,345,0,0" VerticalAlignment="Top" Foreground="#D8FFFFFF" FontSize="18" FontWeight="Bold"/>
+        <ListBox Name="BackTimeTable" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="175,465,40,100" Background="#FF505050" Foreground="#D8FFFFFF" FontSize="18"/>
+        <Label Content="Back" HorizontalAlignment="Left" Margin="218,345,0,0" VerticalAlignment="Top" Foreground="#D8FFFFFF" FontSize="18" FontWeight="Bold"/>
+        <control:TimePicker x:Name="TourTimePicker" HorizontalAlignment="Left" Margin="48,379,0,0" VerticalAlignment="Top"/>
+        <control:TimePicker x:Name="BackTimePicker" HorizontalAlignment="Left" Margin="182,379,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="AddBackButton" Content="Add Back Time" HorizontalAlignment="Left" Margin="182,409,0,0" VerticalAlignment="Top" Background="#FF505050" Foreground="#D8FFFFFF" Width="120" Height="30" Click="AddBackButton_Click" RenderTransformOrigin="0.5,0.63" FontSize="16"/>
+        <Button x:Name="AddTourButton" Content="Add Tour Time" HorizontalAlignment="Left" Margin="48,409,0,0" VerticalAlignment="Top" Background="#FF505050" Foreground="#D8FFFFFF" Width="120" Height="30" Click="AddTourButton_Click" RenderTransformOrigin="0.5,0.63" FontSize="16"/>
+        <ComboBox x:Name="AssignedLineComboBox" HorizontalAlignment="Center" Margin="0,305,0,0" VerticalAlignment="Top" Width="270" FontSize="18"/>
+
+    </Grid>
+</Page>

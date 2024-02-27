@@ -1,0 +1,38 @@
+﻿<Page x:Class="TranSys.AddStationPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:TranSys"
+      mc:Ignorable="d" 
+      d:DesignHeight="720" d:DesignWidth="350"
+      Title="AddStationPage">
+
+    <Grid Width="350" Height="720" Background="#FF323232">
+        <TextBox x:Name="NameTextBox" HorizontalAlignment="Center" Margin="0,115,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="270" FontSize="18" Background="#FF505050" BorderBrush="#FF646464" Foreground="#D8FFFFFF"/>
+        <TextBox x:Name="CapacityTextBox" HorizontalAlignment="Center" Margin="0,190,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="270" FontSize="18" Background="#FF505050" BorderBrush="#FF646464" Foreground="#D8FFFFFF"/>
+        <Label Content="Name" HorizontalAlignment="Left" Margin="40,80,0,0" VerticalAlignment="Top" Foreground="#D8FFFFFF" FontSize="18" FontWeight="Bold"/>
+        <Label Content="Capacity" HorizontalAlignment="Left" Margin="40,155,0,0" VerticalAlignment="Top" Foreground="#D8FFFFFF" FontSize="18" FontWeight="Bold"/>
+        <Label Content="Add Station" HorizontalAlignment="Left" Margin="80,20,0,0" VerticalAlignment="Top" Foreground="#D8FFFFFF" FontSize="24" FontWeight="Bold"/>
+        <Label Content="Vehicle Types" HorizontalAlignment="Left" Margin="40,235,0,0" VerticalAlignment="Top" Foreground="#D8FFFFFF" FontSize="18" FontWeight="Bold"/>
+        <Label Content="Coordinates" HorizontalAlignment="Left" Margin="40,350,0,0" VerticalAlignment="Top" Foreground="#D8FFFFFF" FontSize="18" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,385,0,0" TextWrapping="Wrap" Text="Click on the map to set coordinates" VerticalAlignment="Top" Foreground="#99FFFFFF" FontSize="18" Height="58" Width="270"/>
+        <Label x:Name="LatLabel" Content="Latitude: not set" HorizontalAlignment="Left" Margin="35,440,0,0" VerticalAlignment="Top" Foreground="#D8FFFFFF" FontSize="18"/>
+        <Label x:Name="LongLabel" Content="Longitude: not set" HorizontalAlignment="Left" Margin="35,475,0,0" VerticalAlignment="Top" Foreground="#D8FFFFFF" FontSize="18"/>
+        <Button x:Name="AddButton" Content="Add Station" HorizontalAlignment="Center" Margin="0,650,0,0" VerticalAlignment="Top" Foreground="#D8FFFFFF" Background="#FF505050" FontSize="18" Width="270" Height="40" Click="AddButton_Click"/>
+        <Button x:Name="BusButton" HorizontalAlignment="Left" Margin="40,275,0,0" VerticalAlignment="Top" Background="#FF505050" Foreground="#D8FFFFFF" Width="78" Height="60" Click="BusButton_Click" RenderTransformOrigin="0.5,0.63" BorderBrush="{x:Null}">
+            <Image Source="bus_side.png"></Image>
+        </Button>
+        <Button x:Name="TramButton" HorizontalAlignment="Left" Margin="232,275,0,0" VerticalAlignment="Top" Background="#FF505050" Foreground="#D8FFFFFF" Width="78" Height="60" Click="TramButton_Click" BorderBrush="{x:Null}">
+            <Image Source="tram_side.png"></Image>
+        </Button>
+        <Button x:Name="TrolleyButton" HorizontalAlignment="Center" Margin="0,275,0,0" VerticalAlignment="Top" Background="#FF505050" Foreground="#D8FFFFFF" Width="78" Height="60" Click="TrolleyButton_Click" BorderBrush="{x:Null}">
+            <Image Source="trolley_side.png"></Image>
+        </Button>
+        <Button x:Name="BackButton" Content="" HorizontalAlignment="Left" Margin="40,20,0,0" VerticalAlignment="Top" Foreground="#D8FFFFFF" FontSize="18" Width="35" Height="42" Click="BackButton_Click" IsCancel="True" BorderBrush="{x:Null}">
+            <Button.Background>
+                <ImageBrush ImageSource="/image.png" Opacity="0.9" Stretch="UniformToFill"/>
+            </Button.Background>
+        </Button>
+    </Grid>
+</Page>
